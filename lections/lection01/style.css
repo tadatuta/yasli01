@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    pading: 5px;
+}
+
+function bla {
+
+}
+
+h1#samiy-silniy {
+
+    font: 20px;
+    position: absolute;
+    width: 100px;
+    margin: 10px;
+
+}
+
+#samiy-silniy
+{
+    color: #0f0;
+}
+
+.header
+{
+    color: #ff0;
+}
+
+h1
+{
+    color: #00f !important;
+}
+
+h1.header
+{
+    color: #ccc;
+}
