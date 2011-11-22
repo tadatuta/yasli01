@@ -1,0 +1,248 @@
+/* Reset (begin) */ /**/
+
+    /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video
+    {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section
+    {
+        display: block;
+    }
+
+    body
+    {
+        line-height: 1;
+    }
+
+    ol, ul
+    {
+        list-style: none;
+    }
+    blockquote, q
+    {
+        quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before, q:after
+    {
+        content: '';
+        content: none;
+    }
+
+    table
+    {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+/* Reset (end) */ /**/
+
+/* Global (begin) */ /**/
+    body
+    {
+        font: 13px "Trebuchet MS", sans-serif;
+    }
+
+    .wrapper
+    {
+        width: 1000px;
+        margin: auto;
+    }
+    
+    :link
+    {
+        color: #255199;
+    }
+
+    :visited:hover,
+    :link:hover
+    {
+        color: #fe6510;
+    }
+/* Global (end) */ /**/
+
+/* Header (begin) */ /**/
+    header
+    {
+        position: relative;
+        overflow: hidden;
+
+        min-height: 120px;
+
+        background: #dcdee3 url(../i/head-bg.jpg) 0 100% repeat-x;
+    }
+
+    header:after
+    {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+
+        width: 1035px;
+        height: 390px;
+        margin-left: -517px;
+
+        content: "";
+
+        background: url(../i/head-decor.jpg) no-repeat;
+    }
+
+    .header-i
+    {
+        position: relative;
+        z-index: 1;
+
+        margin-top: 35px;
+
+        white-space: nowrap;
+    }
+
+    .header-col
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+    
+    .header-col-left
+    {
+        width: 36%;
+
+        text-align: center;
+    }
+
+    .header-col-center
+    {
+        width: 48%;
+    }
+
+    .header-col-right
+    {
+        width: 16%;
+    }
+
+    .header-col-i
+    {
+        padding-right: 40px;
+    }
+
+    .header-col-left .header-col-i
+    {
+        padding: 0 40px;
+    }
+    /* menu (begin) */ /**/
+        .menu
+        {
+            margin-top: -8px;
+        }
+
+        .menu li
+        {
+            display: inline-block;
+
+            margin-top: 8px;
+        }
+        
+        .menu ul
+        {
+            white-space: normal;
+        }
+
+        .menu li a,
+        .menu li span
+        {
+            white-space: nowrap;
+        }
+
+        .menu-main
+        {
+            font-size: 12px;
+
+            line-height: 12px;
+        }
+
+        .menu-main li
+        {
+            margin-right: 18px;
+        }
+
+        .menu-secondary
+        {
+            margin-top: 12px;
+
+            line-height: 13px;
+        }
+
+        .menu-secondary li
+        {
+            margin-right: 22px;
+
+            text-transform: uppercase;
+        }
+    /* menu (end) */ /**/
+
+    /* Login (begin) */ /**/
+        .login
+        {
+            font-size: 12px;
+
+            display: inline-block;
+
+            position: relative;
+            top: -12px;
+
+            padding: 10px 15px;
+
+            line-height: 12px;
+            text-decoration: none;
+
+            border: 2px solid #f89e00;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            border-radius: 20px;
+        }
+        
+        .login .line
+        {
+            position: relative;
+            top: -1px;
+
+            line-height: 12px;
+
+            border-bottom: 1px dashed;
+        }
+
+        .login .text
+        {
+            position: relative;
+            top: 1px;
+            border-collapse: collapse;
+        }
+    /* Login (end) */ /**/
+/* Header (end) */ /**/
+
