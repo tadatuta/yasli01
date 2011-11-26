@@ -33,6 +33,13 @@
         display: block;
     }
 
+    .clearfix:after
+    {
+        display: block;
+        clear: both;
+        content: ' ';
+    }
+
     body
     {
         line-height: 1;
@@ -381,4 +388,344 @@
             line-height: 1.6;
         }
     /* Tizer (end) */ /**/
+    
+    .breadcrumbs
+    {
+        font-size: 11px;
+    }
+
+    .breadcrumbs li
+    {
+        display: inline;
+    }
+
+    .breadcrumbs li:after
+    {
+        content: ' /';
+    }
+
+    .breadcrumbs :link,
+    .breadcrumbs :visited
+    {
+        color: #a8aab2;
+    }
+
+    .breadcrumbs a:hover
+    {
+        color: #fe6510;
+    }
+
+    .column-right article h1
+    {
+        font-size: 30px;
+        font-weight: bold;
+
+        margin-top: 12px;
+
+        color: #000;
+    }
+
+    .column-right article p
+    {
+        line-height: 20px;
+
+        margin-top: 20px;
+    }
+
+    .important
+    {
+        font-size: 16px;
+    }
+
+    .important-main
+    {
+        color: #fe6510;
+    }
+
+    .cite
+    {
+        float: left;
+
+        width: 50%;
+    }
+
+    .cite blockquote
+    {
+        position: relative;
+        
+        font-size: 16px;
+        font-style: italic;
+
+        margin: 20px 20px 0 0;
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid #fe6612;
+    }
+
+    .cite blockquote:before
+    {
+        position: absolute;
+        bottom: -1px;
+        
+        display: block;
+
+        width: 100%;
+        height: 1px;
+        
+        content: ' ';
+
+        background: #fe6612; /* Old browsers */
+        background: -moz-linear-gradient(0, #ffffff 0%, #fe6510 50%, #ffffff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, 0 0, right 0, color-stop(0%,#ffffff), color-stop(50%,#fe6510), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(0, #ffffff 0%,#fe6510 50%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(0, #ffffff 0%,#fe6510 50%,#ffffff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(0, #ffffff 0%,#fe6510 50%,#ffffff 100%); /* IE10+ */
+        background: linear-gradient(0, #ffffff 0%,#fe6510 50%,#ffffff 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6- */        
+    }
+
+    .cite blockquote:after
+    {
+        position: absolute;
+        left: 50%;
+        bottom: -16px;
+
+        display: block;
+
+        width: 16px;
+        height: 16px;
+        margin-left: -20px;
+
+        background: url(../i/sprite.png) no-repeat -32px;
+
+        content: ' ';
+    }
+
+    .cite dd
+    {
+        padding-left: 50%;
+    }
+
+    .cite .name
+    {
+        margin-top: 15px;
+    }
+
+    .cite .source
+    {
+        color: #a8aab2;
+        font-size: 11px;
+        font-style: italic;
+    }
+
+    .column-right article h2
+    {
+        font-size: 24px;
+        font-weight: bold;
+
+        margin-top: 54px;
+
+        color: #000;
+    }
+
+
+
+    .two-columns
+    {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+
+        -moz-column-gap: 40px;
+        -webkit-column-gap: 40px;
+        column-gap: 40px;
+    }
+
+    mark
+    {
+        padding: 4px 0;
+        background: #ffeea2;
+    }
+
+    .mdash-item
+    {
+        position: relative;
+        
+        margin-top: 20px;
+    }
+
+    .mdash-item:before,
+    article ul li:before
+    {
+        position: absolute;
+        left: -22px;
+
+        font-size: 16px;
+        line-height: 13px;
+
+        color: #a8aab3;
+
+        content: '—';
+    }
+
+    article ul li:before
+    {
+        line-height: 20px;
+    }
+
+    .right-ico
+    {
+        position: relative;
+
+        padding-right: 18px;
+    }
+
+    .right-ico:after
+    {
+        position: absolute;
+        right: 0;
+
+        width: 16px;
+        height: 16px;
+
+        content: ' ';
+
+        background: url(../i/sprite.png) no-repeat 0 100%;
+    }
+
+    .right-ico-mail:after
+    {
+        background-position: -16px 50%;
+    }
+
+    .article-layout
+    {
+        float: left;
+
+        width: 50%;
+    }
+
+    .article-layout-i
+    {
+        padding-right: 78px;
+    }
+
+    .article-layout h3
+    {
+        font-size: 18px;
+        font-weight: bold;
+
+        margin-top: 45px;
+
+        color: #000;
+    }
+
+    .article-layout-right
+    {
+        margin: 0 -20px 0 20px;
+    }
+
+    .article-layout ol,
+    .article-layout ul
+    {
+        margin-top: 20px;
+        line-height: 20px;
+    }
+
+    article ol
+    {
+        position: relative;
+
+        counter-reset: list;
+    }
+
+    .article-layout li,
+    article section li
+    {
+        position: relative;
+        margin-top: 14px;
+    }
+
+    .article-layout ol li:before,
+    article section ol li:before
+    {
+        position: absolute;
+        left: -20px;
+
+        font-size: 16px;
+        color: #a8aab3;
+
+        counter-increment: list;
+        content: counter(list) '. ';
+    }
+
+    section h3
+    {
+        font-size: 16px;
+        font-weight: bold;
+
+        margin-top: 42px;
+
+        color: #000;
+    }
+
+    section ul
+    {
+        margin-top: 20px;
+    }
+
+    article section ul ol li
+    {
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    article section ul ol li:before
+    {
+        font-size: 12px;
+        font-style: italic;
+        left: -25px;
+
+        line-height: 12px;
+    }
+
+    footer
+    {
+        font-size: 11px;
+        line-height: 16px;
+
+        height: 132px;
+        margin-top: 102px;
+        padding-top: 28px;
+
+        background: #ebeff2;
+
+        color: #8b8d8f;
+    }
+
+    .copy
+    {
+        float: left;
+        padding-left: 20px;
+    }
+
+    .copy p:first-child
+    {
+        text-indent: -13px;
+    }
+
+    .social
+    {
+        float: right;
+        margin: 13px 14% 0 0;
+    }
+
+    .social li
+    {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+
+
 /* Content (end) */ /**/
