@@ -66,6 +66,8 @@
     body
     {
         font: 13px "Trebuchet MS", sans-serif;
+
+        color: #333;
     }
 
     .wrapper
@@ -246,3 +248,137 @@
     /* Login (end) */ /**/
 /* Header (end) */ /**/
 
+/* Content (begin) */ /**/
+    .content
+    {
+        margin-top: 30px;
+
+        white-space: nowrap;
+    }
+
+    .column
+    {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+
+    .column-left
+    {
+        width: 36%;
+    }
+
+    .column-right
+    {
+        width: 64%;
+    }
+
+    .column-i
+    {
+        white-space: normal;
+    }
+
+    .column-left .column-i
+    {
+        padding: 0 40px;
+    }
+
+    .column-right .column-i
+    {
+        padding-right: 40px;
+    }
+
+    /* Menu (begin) */ /**/
+        .side-menu
+        {
+            font-size: 14px;
+
+            padding-right: 20px;
+        }
+
+        .side-menu li
+        {
+            margin-bottom: 3px;
+
+            line-height: 26px;
+        }
+
+        .side-menu .active
+        {
+            font-weight: bold;
+
+            position: relative;
+
+            padding-left: 20px;
+            margin-left: -20px;
+
+            color: #fff;
+            background: #f99c00 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAaCAMAAAC5Oj0UAAAATlBMVEXuYwfvZwbuYQfwbAXyeAP+tgD8sAD6owD0fwH/0B3+uwD4lAD/3Fr/1Cr/xgf2jQD1hgD7qgD5nAD+0j//zBDCVQP/wADxcgT/2EX/7qIUd5UEAAAAOklEQVR42j3AtQHDAADAMJWZG/r/0WyWXyxxjzkecYl/PGOMaxziGJ84xTdu8Yp3nGMfU+xiE2QbQ1Y+RwyzL1ph6wAAAABJRU5ErkJggg==) repeat-x;
+        }
+
+        .side-menu .active:before,
+        .side-menu .active:after
+        {
+            position: absolute;
+            top: 0;
+
+            height: 26px;
+
+            content: "";
+        }
+
+        .side-menu .active:before
+        {
+            left: 0;
+
+            width: 5px;
+
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAaCAMAAABIMWaZAAAA0lBMVEX////+uwD/wAD4lAD/xgf5nAD7qgD8sAD/zBD6owD2jQDyeAP0fwHxcgT1hgD+tgDwbAXvZwb/0B3/1Cr/2EXuYwftry73x0TwtTHimCPUexX+4HryujPx18HfkiD93nD+11P/0iXIZRvViVDPcA/cjB3w1cHhaBPNbxnopCjXgRj+6JPlnib/2k//4nLRdRL0vzXjsYnqqiv/9NDQZxXjcBbqZwz+8s//543/3mLVhkLZhhr/7aLrZQz92WHHXwn61Wj+6KTubgr/2kb7zT7Maw3MybH6AAAAbklEQVR42g3AAwLDQABE0V8TyW5S27bN+1+p84BNpQmv++TK4Xucn3g2Zp5H4WOtZdkyxlCNC8WwkA8K64AwygnTmFCKCvWE0IsIl5AwTgrlrLBIC92U8MsIw7fjOJx3rutSe+x9H1bbwQ3od9p/npELjXCk6CAAAAAASUVORK5CYII=) no-repeat;
+        }
+
+        .side-menu .active:after
+        {
+            right: 0;
+
+            width: 15px;
+
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAaCAMAAABfE/ZQAAABsFBMVEX////5nAD7qgD6owD8sAD4lAD+tgD2jQD+uwD0fwH1hgD/wAD/xgfyeAPxcgT/zBDwbAX/0B3/1CrvZwb/2EXuYwf3x0TtqDr//fjlhir2lBn734TkkzX524D/wAH+yj7//PH/zx7rs1T2jwP9zVPvZg79+fbNbxn89/H41YH/yBv56MbmjTDXghv/4WXsv3z84on/65X/2D3NcB/944Lbeir/8a/feyfzfg3+vAP/5XfzynT/2Uv+yCv25dT/32P91G/jo0r/4n3hq4D/yxn02778tAzWhDHwoi//32n+/PruZgv+3Gjqqy3/1Cv/0yv94H3qqzr+6Jz7shX32Z3xdwv1iBH89Ob/7Jn+0j/1niX+uAf67+HHYRDkmTz5oQz04M7fpXr9553kgCfSfzv+7aXCVQP78+3wcBL6pQT/8bDuxID812XxcQz1xEb/+ejtchz+9Nj1hwL++/P99Nr47OLcjyr0xVL1zXL80Ub/43b7uTbbciH303XNdTL0zW3+/fr84YX6zU399eD/32HvaAfqvovsuF7obRn94In4lwb/3mTQdyH0387vwGrfnlh+YyC3AAAA20lEQVR42kXH04LDQAAF0Lu2knZt27Zt27Zr27/cZmaSOW8HR6vblQDXf9eruy7kD+i7njdfP5SrVKMThzb7l3xBENa7hzvzf9nzJBvtJe8O+hyiylmm+SHPpGaXTFryDKq8edqyKz2VGRrzrbUASJadVDRtHQCJivnakWor4rmdyfALErgng6cDcdxFwdQykhT+xf9TIEVWc9w2ByCd+S4+dyMmjdkvjUCSRQ22LjSSZxN7RcFxELmSt5uGS1CiKLoeB3pCYNTqlc++2z/I6rzGs5l6KO7NVw/govtdLEuXa+5bAAAAAElFTkSuQmCC) no-repeat;
+        }
+    /* Menu (end) */ /**/
+
+    /* Tizer (begin) */ /**/
+        .tizer
+        {
+            margin-top: 75px;
+        }
+
+        .tizer h1
+        {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .tizer h1 a
+        {
+            position: relative;
+
+            display: inline-block;
+
+            padding-top: 150px;
+        }
+
+        .tizer h1 a img
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .tizer p
+        {
+            margin-top: 10px;
+
+            line-height: 1.6;
+        }
+    /* Tizer (end) */ /**/
+/* Content (end) */ /**/
